@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Main" >
+
+    <item android:id="@+id/action_create"
+        android:icon="@drawable/action_create"
+        android:title="Upload"
+    />
+</menu>

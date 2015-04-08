@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:clickable="true"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="horizontal"
+    tools:context=".MainActivity"
+    android:id="@+id/video"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.92">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Resource"
+            android:id="@+id/name"
+            android:layout_weight="0.92"
+            android:padding="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="20dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Download"
+            android:id="@+id/button"
+            android:onClick="downloadResource"
+            android:layout_weight="1.16" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:id="@+id/button2"
+            android:onClick="deleteResource"
+            android:layout_weight="1.01" />
+    </LinearLayout>
+
+</LinearLayout>
